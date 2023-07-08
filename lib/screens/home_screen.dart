@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:cricstat/screens/search_page.dart';
 import 'package:cricstat/utils/color_constant.dart';
 import 'package:cricstat/screens/series_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -82,7 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Row(
                     textBaseline: TextBaseline.ideographic,
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.baseline,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Padding(
                         padding: EdgeInsets.only(right: 20.0),
@@ -90,12 +91,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           onPressed: () => openMenu(context),
                           child: Icon(
                             Icons.menu,
-                            size: 50.0,
+                            size: 30.0,
+                            color: Colors.white,
                           ),
                         ),
                       ),
                       Image(
-                        height: 60,
+                        height: 50,
                         image: AssetImage('images/cricket_ball.png'),
                       ),
                       Text(
@@ -108,7 +110,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           onPressed: () => fetchData(),
                           child: Icon(
                             Icons.refresh,
-                            size: 50.0,
+                            size: 30.0,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -126,38 +129,83 @@ class _HomeScreenState extends State<HomeScreen> {
                           itemBuilder: (context, index) {
                             final match = matches![index];
                             return Container(
-                              margin: EdgeInsets.symmetric(vertical: 10.0),
-                              padding: EdgeInsets.all(8.0),
+                              margin: EdgeInsets.symmetric(vertical: 4,horizontal: 8),
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20.0),
                                 color: StyleColor.containerColor,
+                                borderRadius: BorderRadius.circular(20.0),
                               ),
-                              child: InkWell(
-                                onTap: () => Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) =>
-                                          MatchScoreScreen(matchIndex: index),
-                                    )),
-                                child: ListTile(
-                                  leading: Icon(
-                                    Icons.sports_cricket_sharp,
-                                    size: 50.0,
+                              child: Card(
+                                elevation: 5,
+                                child: Container(
+                                  padding: EdgeInsets.symmetric(horizontal: 10, vertical: 20),
+                                  decoration: BoxDecoration(
+                                    color: StyleColor.containerColor,
                                   ),
-                                  title: Text(matches![index].name,
-                                      style: Styles.kNameTextStyle),
-                                  subtitle: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: [
-                                        Text(
-                                            matches![index]
-                                                .matchType
-                                                .toUpperCase(),
-                                            style: Styles.kMatchTypeStyle),
-                                        Text(matches![index].status,
-                                            style: Styles.kStatusStyle)
-                                      ]),
+                                  child: InkWell(
+                                    onTap: () => Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              MatchScoreScreen(matchIndex: index),
+                                        )),
+                                    child: Container(
+                                      child: Column(
+                                        mainAxisAlignment: MainAxisAlignment.center,
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        children: [
+                                          Row(
+                                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                            children: [
+                                              Container(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 8, vertical: 4),
+                                                decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                          borderRadius:
+                                          BorderRadius.circular(30),
+                                                ),
+                                                child: Icon(
+                                                  Icons.sports_cricket_outlined,
+                                                  color: Colors.yellow.shade700,
+                                                  size: 30.0,
+                                                ),
+                                              ),
+                                              Container(
+                                                padding: EdgeInsets.symmetric(
+                                                    horizontal: 8, vertical: 2),
+                                                decoration: BoxDecoration(
+                                                    color: Colors.redAccent
+                                                        .withOpacity(0.4),
+                                                    borderRadius:
+                                                        BorderRadius.circular(15)),
+                                                child: Text(
+                                                    matches![index]
+                                                        .matchType
+                                                        .toUpperCase(),
+                                                    style: GoogleFonts.poppins(textStyle:Styles.kMatchTypeStyle ) ),
+                                              )
+                                            ],
+                                          ),
+                                          SizedBox(height: 6,),
+                                          Text(matches![index].name,
+                                              style: GoogleFonts.poppins(
+                                                  textStyle:
+                                                      Styles.kNameTextStyle)),
+                                                SizedBox(height: 4,),
+
+                                                ListTile(
+
+                                                    leading: Icon(Icons.update , color: Colors.blue.shade100,),
+                                                   title: Text(matches![index].status,
+                                                          style: GoogleFonts.roboto(textStyle:Styles.kStatusStyle ) ),
+
+
+                                                )
+
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ),
                               ),
                             );
@@ -168,7 +216,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       }
 
                       // By default, show a loading spinner.
-                      return const CircularProgressIndicator();
+                      return Center(child: const CircularProgressIndicator());
                     },
                   ),
                 ),
