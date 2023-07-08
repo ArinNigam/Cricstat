@@ -2,8 +2,7 @@
 
 Introducing "CricStat," a sleek and intuitive mobile application built on the Flutter framework, designed to provide users with real-time cricket scores. Utilizing beautiful widgets and seamless API integration, this app revolutionizes the way cricket enthusiasts stay up-to-date with their favorite matches.
 
-CricStat offers a visually captivating interface that immerses users in the exciting world of cricket. The app's design leverages the power of Flutter's beautiful widgets, resulting in a polished and responsive user experie![Screenshot_1688815821](https://github.com/ArinNigam/Cricstat/assets/99138286/144cca52-fd03-4cf1-92e0-6f41879df55f)
-nce across different devices and platforms.
+CricStat offers a visually captivating interface that immerses users in the exciting world of cricket. The app's design leverages the power of Flutter's beautiful widgets, resulting in a polished and responsive user experience across different devices and platforms.
 
 The heart of CricStat lies in its ability to fetch live match data through API calls through https://cricketdata.org/ . By connecting to a reliable and up-to-date cricket score API, the app ensures that users receive accurate and real-time information about ongoing matches. Whether it's a thrilling test match, an intense one-day international, or a captivating T20 encounter, CrickStat keeps users in the know, no matter where they are.
 
