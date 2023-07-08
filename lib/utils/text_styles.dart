@@ -8,7 +8,7 @@ class Styles {
     fontWeight: FontWeight.bold,
   );
   static const TextStyle kNameTextStyle = TextStyle(
-    fontSize: 30.0,
+    fontSize: 24.0,
     fontFamily: 'Roboto+Condensed',
     color: Color(0xfff8f7ff),
     fontWeight: FontWeight.bold,
@@ -24,17 +24,17 @@ class Styles {
     color: Color(0xff4cc9f0),
   );
   static const TextStyle kMatchTypeStyle = TextStyle(
-    fontSize: 30.0,
+    fontSize: 20.0,
     fontFamily: 'Roboto+Condensed',
     color: Color(0xfff94144),
     fontWeight: FontWeight.bold,
   );
 
   static const TextStyle kStatusStyle = TextStyle(
-    fontSize: 30.0,
+    fontSize: 20.0,
     fontFamily: 'Roboto+Condensed',
-    color: Color(0xff008bf8),
-    fontWeight: FontWeight.bold,
+    color: Colors.white54,
+    fontWeight: FontWeight.w500,
   );
   static const TextStyle kODI = TextStyle(
     fontSize: 20.0,
