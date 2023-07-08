@@ -15,6 +15,7 @@ CrickStat embraces Flutter's cross-platform capabilities, enabling seamless depl
 
 ![Screenshot_1688815821](https://github.com/ArinNigam/Cricstat/assets/99138286/14abf669-2d18-4d05-b64a-f704e5b1cf5a)
 ![Screenshot_1688815826](https://github.com/ArinNigam/Cricstat/assets/99138286/d0c20af2-b34b-4f04-9ad6-f193b5f741ec)
+![Screenshot_1688816095](https://github.com/ArinNigam/Cricstat/assets/99138286/514c3e85-8ebb-4362-981a-50d7eeaad5e9)
 
 
 
