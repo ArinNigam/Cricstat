@@ -13,9 +13,11 @@ The app's home screen showcases a curated list of ongoing matches, match details
 
 CrickStat embraces Flutter's cross-platform capabilities, enabling seamless deployment on both Android and iOS devices. The app optimizes performance, ensuring smooth scrolling, quick response times, and efficient data handling. With its intuitive user interface and seamless functionality, CrickStat sets a new standard for cricket score applications, catering to the needs of both casual fans and dedicated cricket enthusiasts.
 
-![Screenshot_1688815821](https://github.com/ArinNigam/Cricstat/assets/99138286/14abf669-2d18-4d05-b64a-f704e5b1cf5a)
-![Screenshot_1688816095](https://github.com/ArinNigam/Cricstat/assets/99138286/514c3e85-8ebb-4362-981a-50d7eeaad5e9)
-
+<img src="https://github.com/ArinNigam/Cricstat/assets/99138286/fb7e53db-a37b-40ce-a46a-b641ab0f2d55" alt="HomePage" width="300" height="600">
+<img src="https://github.com/ArinNigam/Cricstat/assets/99138286/968760aa-5bf1-44e1-8c22-7089990f5a16" alt="Series" width="300" height="600">
+<br>
+<img src="https://github.com/ArinNigam/Cricstat/assets/99138286/c2baf14a-3766-4fe8-bbcb-6a0b56a0045a" alt="Series" width="300" height="600">
+<img src="https://github.com/ArinNigam/Cricstat/assets/99138286/ceec2e16-ec7d-4923-84d9-a962d42db9e3" alt="Series" width="300" height="600">
 
 
 
